@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+}
+
+
+/* Header */
+
+header {
+  padding: 0.5rem 1rem;
+  background: #333;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  line-height: 1.8rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.image-logo {
+  height: 30px;
+}
+
+.image-panier {
+  height: 25px;
+}
+
+header {
+  height: 80px;
+}
+
+header ul {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+}
+
+header ul li {
+  padding: 1rem;
+  font-size: small;
+}
+
+header ul li a:hover {
+  color: #f1c40f;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Section MacBook Pro */
+
+.macbook {
+  flex: auto;
+  display: flex;
+  padding-top: 200px;
+  padding-left: 590px;
+  background: url("https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp16-spacegray-gallery7-202301?wid=2000&hei=1536&fmt=jpeg&qlt=95&.v=1670626224500")
+    center center/cover;
+
+}
+
+.macbook-content {
+  max-width: auto;
+  height: 735px;
+  color: black;
+  font-size: 15px;
+  text-align: center;
+}
+
+.macbook h1 {
+  font-size: 2rem;
+  margin-top: 35rem;
+}
+
+.macbook p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+
+
+/* Balise Vidéo Iphone */
+
+.background-video-iphone {
+  margin-top: 45px;
+  width: 99vw;
+}
+
+
+/* Section  Iphone */
+
+.iphone {
+  display: flex;
+  flex-flow: row nowrap;
+  min-height: 600px;
+}
+
+.iphone-content-img {
+  flex: 1;
+  background: url("../images/iphone14pro.webp") center center/cover;
+}
+
+.iphone-content-text {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.iphone-content-text h2 {
+  margin-bottom: 2rem;
+}
+
+.iphone-content-text p {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+
+/* Section Apple Watch */
+
+.watch {
+  display: flex;
+  flex-flow: row nowrap;
+  min-height: 600px;
+}
+
+.watch-content-img {
+  flex: 1;
+  padding-right: 16rem;
+  background: url("../images/iwatch4.webp") center center/cover;
+}
+
+.watch-content-text {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.watch-content-text h2 {
+  margin-bottom: 2rem;
+}
+
+.watch-content-text p {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+
+/* Section Airpods */
+
+.airpods {
+  display: flex;
+  flex-flow: row nowrap;
+  min-height: 600px;
+}
+
+.airpods-content-img {
+  flex: 1;
+  background: url("../images/air-pod.jpg") center center/cover;
+}
+
+.airpods-content-text {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.airpods-content-text h2 {
+  margin-bottom: 2rem;
+}
+
+.airpods-content-text p {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+
+/* Div photo WWWDC23 */
+
+.apple-app {
+  height: 770px;
+  background: no-repeat url(../images/wwdc23.webp) center center/cover;
+}
+
+
+/* Formulaire */
+
+.formulaire {
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+#lastname,
+#firstname,
+#email {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: black;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  margin-top: 7px;
+}
+
+
+/* Section Cloud Inscription */
+
+.cloud {
+  display: flex;
+  flex-flow: row nowrap;
+  min-height: 600px;
+}
+
+.cloud-content-img {
+  flex: 1;
+  padding-right: 16rem;
+  background: url("../images/icloud.jpg") center center/cover;
+}
+
+.cloud-content-text {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cloud-content-text h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.cloud-content-text p {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+
+/* Section Panier */
+
+.panier {
+  display: flex;
+  flex-flow: row nowrap;
+  min-height: 600px;
+}
+
+.panier-content-img {
+  flex: 1;
+  background: no-repeat url("../images/panier2.png") center center/cover;
+}
+
+.panier-content-text {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.panier-content-text h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.panier-content-text p {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+#Articles {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#Articles th {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#Articles td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+#Panier {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#Panier th {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#Panier td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+
+/* Div Apple Park Image */
+
+.apple-park-img {
+  height: 500px;
+  background: no-repeat url(../images/apple-park.jpg) center center/cover;
+  background-position: 50% 85%;
+}
+
+
+/* Footer */
+
+footer {
+  background: #333;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
+  color: white;
+  font-weight: 600;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+}
+
+footer ul li img {
+  height: 70px;
+  width: 70px;
+  padding: 10px;
+}
+
+
+/* Bouton */
+
+.btn {
+  background-color: steelblue;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  transition: 0.25s ease;
+  box-shadow: 3px 3px 5px #aaa;
+  margin-top: 10px;
+  border-radius: 5px;
+  margin-right: 8px;
+}
+
+.btn:hover {
+  box-shadow: 5px 5px 10px #aaa;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.btn-red {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  transition: 0.25s ease;
+  box-shadow: 3px 3px 5px #aaa;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.btn-red:hover {
+  box-shadow: 5px 5px 10px #aaa;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+.btn-valider {
+  background-color: steelblue;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  transition: 0.25s ease;
+  box-shadow: 3px 3px 5px #aaa;
+  margin-top: 10px;
+  border-radius: 5px;
+  margin-right: 8px;
+  margin-top: 50px;
+}
+
+.btn-valider:hover {
+  box-shadow: 5px 5px 10px #aaa;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/style.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel = "icon" href = "./images/pomme.png" type = "image/x-icon">
+    <title>Apple</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <ul>
+                <li><a href=""><img class="image-logo" src="./images/pomme.png" alt="apple-logo"></a></li>
+                <li><a href="">Store</a></li>
+                <li><a href="">Mac</a></li>
+                <li><a href="">Ipad</a></li>
+                <li><a href="">Iphone</a></li>
+                <li><a href="">Watch</a></li>
+                <li><a href="">AirPods</a></li>
+                <li><a href="">Divertissement</a></li>
+                <li><a href="">Accessoires</a></li>
+                <li><a href="">Assistance</a></li>
+                <li><a href="#ancragepanier"><img class="image-panier" src="./images/sac-de-courses.png" alt="sac de courses"></a></li>
+            </ul>
+        </header>
+        <section class="macbook">
+            <div class="macbook-content">
+              <h1>
+               MacBook Pro 16"
+              </h1>
+              <p>Rien ne vous arrête. Surtout pas lui.
+              </p>
+              <p>Prix : 3250 €</p>
+              <button class="btn" onclick="ajouter('MacBookPro')" >Ajouter au panier 🛒</button>
+            </div>
+          </section>
+        <video class="background-video-iphone" autoplay loop muted poster>
+            <source src="https://www.apple.com/105/media/ww/iphone-14-pro/2023/b094f6e4-dcdb-494f-bd72-45d659126dcd/anim/hero/large.mp4" type="video/mp4">
+            </video>
+              <section class="iphone">
+                <div class="iphone-content-img"></div>
+                <div class="iphone-content-text">
+                  <h2>
+                    Iphone 14 Pro
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                    aliquam commodi expedita exercitationem recusandae minima blanditiis
+                    facilis et, distinctio voluptatibus laborum itaque voluptate vel earum
+                    ipsum totam dolorum veniam. Iusto repellat labore quisquam dicta ad
+                    doloribus inventore corrupti voluptas eligendi cupiditate at assumenda
+                    vitae, facere provident, deserunt beatae, consequuntur officiis?
+                  </p>
+                  <br>
+                  <p>Prix : 1650 €</p>
+                  <br>
+                  <button class="btn"  onclick="ajouter('Iphone14Pro')">Ajouter au panier 🛒</button>
+                </div>
+              </section>
+              <section class="watch">
+                <div class="watch-content-text">
+                  <h2>
+                    Apple Watch Série 8
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                    aliquam commodi expedita exercitationem recusandae minima blanditiis
+                    facilis et, distinctio voluptatibus laborum itaque voluptate vel earum
+                    ipsum totam dolorum veniam. Iusto repellat labore quisquam dicta ad
+                    doloribus inventore corrupti voluptas eligendi cupiditate at assumenda
+                    vitae, facere provident, deserunt beatae, consequuntur officiis?
+                  </p>
+                  <br>
+                  <p>Prix : 450 €</p>
+                  <br>
+                  <button class="btn"  onclick="ajouter('AppleWatch')">Ajouter au panier 🛒</button>
+                </div>
+                <div class="watch-content-img"></div>
+              </section>
+              <section class="airpods">
+                <div class="airpods-content-img"></div>
+                <div class="airpods-content-text">
+                  <h2>
+                    AirPods Max
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                    aliquam commodi expedita exercitationem recusandae minima blanditiis
+                    facilis et, distinctio voluptatibus laborum itaque voluptate vel earum
+                    ipsum totam dolorum veniam. Iusto repellat labore quisquam dicta ad
+                    doloribus inventore corrupti voluptas eligendi cupiditate at assumenda
+                    vitae, facere provident, deserunt beatae, consequuntur officiis?
+                  </p>
+                  <br>
+                  <br>
+                  <p>Prix : 650 €</p>
+                  <button class="btn"  onclick="ajouter('AirPodsMax')">Ajouter au panier 🛒</button>
+                </div>
+                </section>
+                <div class="apple-app"></div>
+                <section class="cloud">
+                  <div class="cloud-content-text">
+                    <h2>
+                Inscription
+                    </h2>
+                    <form class="formulaire" name="formulaire" method="get" action="./index.html">
+                      <label for="lastname"></label>
+                      <input type="text" id="lastname" name="lastname" placeholder="LastName"> 
+                      <br>
+                      <label for="firstname"></label>
+                      <input type="text" id="firstname" name="firstname" placeholder="FirstName">
+                      <br>
+                      <label for="email"></label>
+                      <input type="email" id="email" name="email" size="30" placeholder="Email">
+                      <br>
+                      <input class="btn-valider" type="button" onclick="valider()"  value="Valider">
+                  </form>
+                  <br>
+               <br>
+               <br>
+                    <br>
+                  </div>
+                  <div class="cloud-content-img"></div>
+                </section>
+                <section class="panier" id="ancragepanier">
+                  <div class="panier-content-img"></div>
+                  <div class="panier-content-text">
+                    <h2>
+                      Panier
+                    </h2>
+                    <table id="Articles">
+                    </table>
+                    <br>
+                    <table id="Panier">
+                    </table>
+                  </div>
+                </section>
+                <div class="apple-park-img"></div>
+        <footer>
+            <ul>
+              <li><a href="https://www.facebook.com/apple/?locale=fr_FR" target="_blank"><img src="./images/social-icon-facebook.svg" alt="image-facebook"></a></li>
+              <li><a href="https://www.instagram.com/apple/?hl=fr" target="_blank"><img src="./images/social-icon-instagram.svg" alt="image-instagram"></a></li>
+              <li><a href="https://twitter.com/Apple" target="_blank" ><img src="./images/social-icon-twitter.svg" alt="image-twitter"></a></li>
+              <li><a href="https://www.linkedin.com/company/apple" target="_blank"><img src="./images/social-icon-linkedin.svg" alt="image-linkedin"></a></li>
+            </ul>  
+            <br>
+            <p>Copyright © 2023 François Francis, Inc.</p>
+        </footer>
+        <script src="./Script/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="sweetalert2.all.min.js"></script>
+</body>
+</html>
